@@ -1,0 +1,85 @@
+@charset"utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Petemoss&display=swap');
+
+/*Configurações padrão*/
+body,
+html {
+    margin: 0;
+    font: 16px 'Fira Sans', sans-serif;
+    color: #000;
+    height: 100%;
+}
+
+.conteudo {
+    color: #000;
+    background-color: #c3c3c3;
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+h1,
+h2,
+h4 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 2em;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+/*Efeito Parallax
+--------------------------*/
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5 {
+    position: relative;
+    height: 100%;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+
+}
+
+.caixa1 {
+    background-image: url(../img/imagem01.jpg);
+}
+
+.caixa2 {
+    background-image: url(../img/imagem02.jpg);
+
+}
+
+.caixa3 {
+    background-image: url(../img/imagem03.jpg);
+}
+
+.caixa4 {
+    background-image: url(../img/imagem04.jpg);
+}
+
+.caixa5 {
+    background-image: url(../img/imagem05.jpg);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #131212;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5;
+    opacity: 0.8;
+    border-radius: 10px;
+}
